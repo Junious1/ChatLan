@@ -5,7 +5,7 @@ Cette application est un projet de groupe issue du TD de Genie Logiciel(UPB) don
 Les membres du groupe sont :
 
 - Melan Bethsaleèl Jessé Marc Olivier(userOlivier)
-- N'Guessan Yakpa Ludivine
+- N'Guessan Yakpa Ludivine()
 - TANOH Eliezer Bonny(1ne8ight)
 
 - TRAORE Karamoko Mamadou Junior(Junious1)
