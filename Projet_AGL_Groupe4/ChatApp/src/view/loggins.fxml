@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="afficher" onKeyPressed="#logginkey" onMouseDragged="#MouseDrag" onMousePressed="#Mousepress" onMouseReleased="#Mousereleased" prefHeight="486.0" prefWidth="621.0" style="-fx-background-color: white; -fx-border-color: #00A2E8; -fx-border-width: 5; -fx-border-radius: 1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loggincontroller">
+   <children>
+      <Button layoutX="114.0" layoutY="224.0" mnemonicParsing="false" onAction="#selectfolder" prefHeight="30.0" prefWidth="143.0" style="-fx-background-color: #effffd; -fx-border-color: #00A2E8; -fx-border-radius: 4;" text="Choisir un dossier" textFill="#00a2e8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtname" layoutX="278.0" layoutY="67.0" prefHeight="35.0" prefWidth="180.0" promptText="Entrez votre nom utilisateur..." style="-fx-background-color: #effffd; -fx-border-color: #00A2E8; -fx-border-radius: 4;">
+         <font>
+            <Font name="Bodoni MT Bold" size="13.0" />
+         </font></TextField>
+      <Label contentDisplay="CENTER" layoutX="78.0" layoutY="67.0" prefHeight="35.0" prefWidth="200.0" text="Nom d'utilisateur" textFill="#181818">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="114.0" layoutY="119.0" prefHeight="35.0" prefWidth="127.0" text="Mot de passe" textFill="#181818">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <PasswordField fx:id="mdp" layoutX="277.0" layoutY="115.0" prefHeight="35.0" prefWidth="180.0" promptText="Entrez votre Mot de passe..." style="-fx-background-color: #effffd; -fx-border-color: #00A2E8; -fx-border-radius: 4;">
+         <font>
+            <Font name="Bodoni MT Bold" size="13.0" />
+         </font></PasswordField>
+      <TextField fx:id="txtserverip" layoutX="278.0" layoutY="166.0" prefHeight="35.0" prefWidth="180.0" promptText="" style="-fx-background-color: #effffd; -fx-border-color: #00A2E8; -fx-border-radius: 4;">
+         <font>
+            <Font name="Bodoni MT Bold" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txtfolderaddress" editable="false" focusTraversable="false" layoutX="277.0" layoutY="221.0" prefHeight="35.0" prefWidth="180.0" promptText="Ou les fichiers seront sauvegarder" style="-fx-background-color: #effffd; -fx-border-color: #00A2E8; -fx-border-radius: 4;">
+         <font>
+            <Font name="Bodoni MT Bold" size="13.0" />
+         </font></TextField>
+       <Button contentDisplay="CENTER" layoutX="260.0" layoutY="343.0" onAction="#insc" prefHeight="34.0" prefWidth="143.0" style="-fx-background-color: #00A2E8;" text="S'inscrire" textFill="#effffd">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+       <Button contentDisplay="CENTER" layoutX="260.0" layoutY="297.0" onAction="#login" prefHeight="34.0" prefWidth="143.0" style="-fx-background-color: #00A2E8;" text="Se connecter" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+       <Button contentDisplay="CENTER" layoutX="260.0" layoutY="393.0" onAction="#close" prefHeight="34.0" prefWidth="143.0" style="-fx-background-color: #00A2E8;" text="Quitter" textFill="#effffd">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   <Label fx:id="incorr" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="436.0" prefHeight="35.0" prefWidth="602.0" style="-fx-content-display: center;" textFill="#FF1E27">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="68.0" layoutY="166.0" prefHeight="35.0" prefWidth="180.0" text="Adresse du serveur" textFill="#181818">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="250.0" layoutY="14.0" prefHeight="35.0" prefWidth="162.0" text="CONNEXION" textFill="#181818">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="114.0" layoutY="268.0" prefHeight="18.0" prefWidth="143.0" text="Votre adresse IP est :">
+         <font>
+            <Font name="Bodoni MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ips" layoutX="278.0" layoutY="267.0" prefHeight="20.0" prefWidth="118.0">
+         <font>
+            <Font name="Bodoni MT Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
