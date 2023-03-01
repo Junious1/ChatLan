@@ -217,15 +217,15 @@ public class loggincontroller implements Initializable{
 		String folderaddres = txtfolderaddress.getText();
 		String ipserver = txtserverip.getText();
 		
-//		if(ipserver.equalsIgnoreCase(InetAddress.getLocalHost().getHostAddress())) {
-//			new Thread(){
-//				public void run() {
-//					String[] args = null;
-//					Server.main(args);
-//				}
-//			}.start();
-//			System.out.println("Server ouvert");
-//		}
+		if(ipserver.equalsIgnoreCase(InetAddress.getLocalHost().getHostAddress())) {
+			new Thread(){
+				public void run() {
+					String[] args = null;
+					Server.main(args);
+				}
+			}.start();
+			System.out.println("Server ouvert");
+		}
 		
 		if (!name.equals("") && !folderaddres.equals("") && !ipserver.equals("")) {
 			
